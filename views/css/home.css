@@ -143,6 +143,7 @@
     position: relative;
     display: inline-flex;
     width: 124%;
+    top: -102.5%;
     left: -12%;
     justify-content: space-evenly;
     color: rgba(0, 0, 0, 0.3);
