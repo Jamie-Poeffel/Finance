@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="icon" type="icon/png" href="icon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" sizes="180x180" />
+    <title>Finance</title>
+</head>
+
+<body>
+    <div class="login-cont">
+        <a href="./login.html">
+            <ion-icon class="icon" ios="person-circle-outline" md="person-circle-outline"></ion-icon>
+        </a>
+    </div>
+    <div class="container-top">
+        <h4>Current balance:</h4>
+        <div class="group">
+            <h1>10'000.00</h1>
+            <h1>CHF</h1>
+        </div>
+        <div class="grt">
+            <h4>
+                <p>CH93&nbsp;</p>
+                <p>1234&nbsp;</p>
+                <p>5678&nbsp;</p>
+                <p>9012&nbsp;</p>
+                <p>3456&nbsp;7</p>
+            </h4>
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <div class="cont">
+                <div class="nav firstlink" id="first">
+                    <p>Timeline</p>
+                </div>
+                <div class="nav secondlink active" id="second">
+                    <p>Home</p>
+                </div>
+                <div class="nav thirdlink" id="third">
+                    <p>Transact</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="container-main" class="container-main"></div>
+    <script src="./script.js"></script>
+    <script src="./API/Auth.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function setBodyHeight() {
+
+            const vh = window.innerHeight * 0.01;
+
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const STORAGE_KEY = 'SESSION_TOKEN_FINANCEAPP';
+
+            if (!localStorage.getItem(STORAGE_KEY)) {
+                window.location.href = './login.html';
+            }
+        });
+
+        window.addEventListener('load', setBodyHeight);
+        window.addEventListener('resize', setBodyHeight);
+
+        document
+            .getElementById('first')
+            .addEventListener('click', function () {
+                click(document.getElementById('first'));
+            });
+        document
+            .getElementById('second')
+            .addEventListener('click', function () {
+                click(document.getElementById('second'));
+            });
+        document
+            .getElementById('third')
+            .addEventListener('click', function () {
+                click(document.getElementById('third'));
+            });
+
+        function click(self) {
+            const first = document.getElementById('first');
+            const second = document.getElementById('second');
+            const third = document.getElementById('third');
+
+            first.classList.remove('active');
+            second.classList.remove('active');
+            third.classList.remove('active');
+
+            self.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

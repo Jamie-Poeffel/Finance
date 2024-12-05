@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body {
+    background-color: #a8dce7;
+    position: fixed;
+    margin: 0;
+    display: block;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #087e8b;
+}
+.disdf {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+}
+.disdf a {
+    text-decoration: none;
+    color: #087e8b;
+}
+.container {
+    position: fixed;
+    border-radius: 2rem;
+    background-color: #fff;
+    padding: 20px;
+    width: 20rem;
+    height: 18rem;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 9px 21px 59px 9px rgba(0, 0, 0, 0.15),
+        inset 11px 10px 66px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container .emailsec input {
+    background-color: transparent;
+    position: relative;
+    left: 50%;
+    width: 280px;
+    height: 40px;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-bottom: #087e8b 1px solid;
+    border-radius: 0px !important;
+    transform: translateX(-50%);
+    margin-bottom: 16px;
+}
+
+.container .emailsec input::placeholder {
+    color: #087e8b;
+}
+
+.container .passwordsec input {
+    background-color: transparent;
+    font-size: larger;
+    left: 50%;
+    position: relative;
+    width: 280px;
+    height: 40px;
+    font-size: large;
+    outline: none;
+    border: none;
+    border-bottom: #087e8b 1px solid;
+    border-radius: 0px !important;
+    transform: translateX(-50%);
+    margin-bottom: 16px;
+}
+
+.container .passwordsec input::placeholder {
+    color: #087e8b;
+}
+
+.container .buttonsecandlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.container .buttonsecandlink button {
+    position: relative;
+    left: 50%;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transform: translateX(-58%);
+    color: #087e8b;
+}
+
+.container .buttonsecandlink button:active {
+    transform: translateX(-58%) scale(0.98);
+}

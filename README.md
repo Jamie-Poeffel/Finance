@@ -1,1 +1,3 @@
-# Finance
+# FinanceApp
+
+## Manage your finances

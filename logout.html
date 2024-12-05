@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>logout</title>
+  <link rel="stylesheet" href="logout.css" />
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  <link rel="icon" type="icon/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="/icon.png" sizes="180x180" />
+</head>
+
+<body>
+  <div class="body">
+    <div class="container"></div>
+    <div class="container2"></div>
+    <div class="container3">
+      <button type="button" onclick="logout()">logout</button>
+    </div>
+  </div>
+</body>
+<script>
+  function logout() {
+    const STORAGE_KEY = 'SESSION_TOKEN_FINANCEAPP';
+
+    localStorage.removeItem(STORAGE_KEY);
+
+    window.location.href = './login.html';
+  }
+</script>
+
+</html>

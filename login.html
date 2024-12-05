@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="icon" type="icon/png" href="icon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" sizes="180x180" />
+    <title>login</title>
+</head>
+
+<body>
+    <form action="#" method="post" class="container" autocomplete="off" novalidate="true" id="login-form">
+        <h2 style="text-align: center">login</h2>
+        <section class="emailsec">
+            <input type="email" name="email" id="email" placeholder="Username" required />
+        </section>
+        <section class="passwordsec">
+            <input type="password" name="password" id="password" placeholder="Password" required />
+        </section>
+        <section class="buttonsecandlink">
+            <button id="ient" type="submit">login</button>
+            <div class="disdf">
+                <p>no Account?&nbsp;</p>
+                <a href="newAccount.html">
+                    <p>signup!</p>
+                </a>
+            </div>
+        </section>
+    </form>
+    <script src="API/req.js" type="module"></script>
+</body>
+
+</html>
