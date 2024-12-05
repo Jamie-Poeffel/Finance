@@ -142,7 +142,6 @@
 .home-cont .chart .text-cont {
     position: relative;
     display: inline-flex;
-    top: -102.5%;
     width: 124%;
     left: -12%;
     justify-content: space-evenly;
