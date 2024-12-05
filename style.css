@@ -8,13 +8,16 @@
 }
 body {
     background-color: #a8dce7;
-    height: calc(var(--vh, 1vh) * 100); /* Verwende die berechnete Höhe */
+    height: calc(var(--vh, 1vh) * 100);
     margin: 0;
     display: block;
 }
 body,
 html {
     overscroll-behavior: none;
+}
+html {
+    height: 100dvh;
 }
 
 .container-top h4 {
@@ -38,6 +41,7 @@ html {
     left: 30px;
     font-family: 'itim';
     font-size: 23px;
+    font-weight: 600;
 }
 .container-top .grt h4 {
     text-decoration: none;
@@ -76,6 +80,8 @@ html {
     height: 40px;
     width: 300px;
     left: 45px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .firstlink {
@@ -92,6 +98,7 @@ html {
     position: fixed;
     top: 190px;
     left: 65px;
+    font-family: 'Inter', sans-serif;
 }
 
 .secondlink {
@@ -105,6 +112,7 @@ html {
     height: 40px;
 }
 .secondlink p {
+    font-family: 'Inter', sans-serif;
     position: fixed;
     left: 175px;
     top: 190px;
@@ -124,6 +132,7 @@ html {
     position: fixed;
     left: 270px;
     top: 190px;
+    font-family: 'Inter', sans-serif;
 }
 .active {
     position: fixed;

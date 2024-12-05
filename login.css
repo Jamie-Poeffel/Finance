@@ -89,7 +89,8 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-.container .buttonsecandlink button {
+.container .buttonsecandlink button#ient,
+.container .buttonsecandlink button#isdsd {
     position: relative;
     left: 50%;
     width: 280px;
