@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transact-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 10px;
+    height: calc(100% - 50px);
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.transact-cont .addbtn {
+    position: absolute;
+    bottom: 20px;
+    left: 75%;
+    z-index: 40;
+}
+
+.transact-cont .addbtn .btn-transactadd {
+    width: 70px;
+    height: 70px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+}
+
+.transact-cont .addbtn .btn-transactadd:active {
+    transform: scale(0.95);
+}
+
+.transact-cont .addbtn .btn-transactadd p {
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+}
+
+.transact-cont .list {
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+.transact-cont .list .item {
+    position: relative;
+    padding: 10px;
+    width: 90%;
+    border-radius: 1rem;
+    margin-top: 10px;
+    background: #a8dce7;
+    height: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.transact-cont .list .item .title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.transact-cont .list .item .wrapper {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.transact-cont .list .item .amount {
+    display: inline-flex;
+    gap: 3px;
+}

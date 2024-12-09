@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .arrow-back {
     position: fixed;
     top: 10px;
@@ -17,4 +22,7 @@
 .arrow-back:hover {
     background-color: #e3f8fb;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.daof {
+    margin-bottom: 15px;
 }

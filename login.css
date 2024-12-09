@@ -89,8 +89,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-.container .buttonsecandlink button#ient,
-.container .buttonsecandlink button#isdsd {
+.container .buttonsecandlink button {
     position: relative;
     left: 50%;
     width: 280px;
@@ -102,8 +101,12 @@ h2 {
     font-weight: 400;
     transform: translateX(-58%);
     color: #087e8b;
+    background-color: #a8dce7;
 }
 
+.container .buttonsecandlink button.daof {
+    transform: translateX(-50%);
+}
 .container .buttonsecandlink button:active {
     transform: translateX(-58%) scale(0.98);
 }

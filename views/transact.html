@@ -1,0 +1,220 @@
+<link rel="stylesheet" href="./views/css/transact.css">
+
+<div class="transact-cont">
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">
+            <p>title</p>
+        </div>
+        <div class="wrapper">
+            <div class="text">testtext</div>
+            <div class="amount">
+                <p>10.00</p>
+                <p>CHF</p>
+            </div>
+        </div>
+    </div>
+    <section class="list" id="listing">
+        <script>
+            const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            const listing = document.getElementById('listing')
+
+            document.addEventListener('', () => {
+                list.forEach((e) => {
+                    createTransactElement()
+                })
+            })
+
+
+            function createTransactElement() {
+                const item = document.createElement('div')
+                item.classList.add('item')
+
+                const title = document.createElement('div')
+                title.classList.add('title')
+                title.innerHTML = "<p>title</p>"
+
+                item.appendChild(title);
+
+                const wrapper = document.createElement('div')
+                wrapper.classList.add('wrapper')
+
+                const text = document.createElement('div')
+                text.classList.add('text')
+                text.innerHTML = "testtext";
+
+                wrapper.appendChild(text)
+
+                const amount = document.createElement('div')
+                amount.classList.add('amount')
+
+                const money = document.createElement('p')
+                money.innerText = "10.00"
+                const currency = document.createElement('p')
+                currency.innerText = "CHF"
+
+                amount.appendChild(money)
+                amount.appendChild(currency)
+                wrapper.appendChild(amount)
+                item.appendChild(wrapper)
+
+                listing.appendChild(item)
+            }
+
+
+            document.getElementById('addbtn').addEventListener('click', () => {
+                console.log(list)
+                list.push(list.length + 1);
+            })
+
+        </script>
+    </section>
+    <section class="addbtn">
+        <button class="btn-transactadd" id="addbtn">
+            <p>+</p>
+        </button>
+    </section>
+</div>
