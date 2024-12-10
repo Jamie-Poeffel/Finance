@@ -1,6 +1,6 @@
 document.getElementById('first').addEventListener('click', function () {
     document.getElementById('container-main').innerHTML = '';
-    fetch('./views/timeline.html')
+    fetch('./views/settings.html')
         .then((response) => response.text())
         .then((data) => {
             document.getElementById('container-main').innerHTML = data;
