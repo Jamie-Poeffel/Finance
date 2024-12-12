@@ -57,7 +57,7 @@ html {
 }
 
 .container-main {
-    background-color: #ffff;
+    background-color: rgb(245, 245, 245);
     bottom: 0px;
     z-index: -10 !important;
     position: fixed;
